@@ -1,5 +1,7 @@
 {
-
+      "rewrites": [
+    {"source": "/api/:path*", "destination": "https://the-ultimate-calc.onrender.com/api/:path*" }
+      ],
     routes: [
         {
             src: /[^.]+,
@@ -8,4 +10,5 @@
         }
     ]
 }
+
 

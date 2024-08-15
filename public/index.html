@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/edit (2).png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#03773f" />
+    <title>EATECH Calculator</title>
+	<meta property="og:title" content="Eatech Calculator" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="eatech-calc.com" />
+	<meta property="og:image" content="%PUBLIC_URL%/edit (2).png" />
+	<meta property="og:image:type" content="image/png" />
+	<meta property="og:description" content="A calculator built to solve engineering equations">
+	<meta property="og:site_name" content="eatech-calc.vercel.app">
+	<meta name="keywords" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/edit (2).png" />
+    <link rel="stylesheet" href="%PUBLIC_URL%/unique.css">
+	<script id="Mathjax-js" async src="%PUBLIC_URL%/tex-chtml-full.js"></script>
+  </head>
+  <body class="is-preload">
+	<div id="wrapper" class="fade-in">
+	<noscript>You need to enable JavaScript to run this app.</noscript>
+		<div id="not">
+			<div class="note" role="status">
+				<img src="%PUBLIC_URL%/edit (2).png" class="styleimg3"></img>
+			</div>
+			<div class="loading" style="font-size: 16px; text-align: center">Loading</div>
+
+		</div>
+		<div id="load">
+			<div id="root"></div>
+		</div>
+		</div>
+    
+
+    <script>
+			document.getElementById('load').style.display='none';
+			function hide(){
+				document.getElementById('not').style.display='none'
+				document.getElementById('load').style.display='block'
+			}
+			window.addEventListener('DOMContentLoaded', function(){
+				setTimeout(hide,1500)
+			})
+			document.getElementById("wrapper").style.minHeight="fit-content"
+			
+	</script>
+	<script src="%PUBLIC_URL%/jquery.min.js"></script>
+	<script src="%PUBLIC_URL%/jquery.scrollex.min.js"></script>
+	<script src="%PUBLIC_URL%/jquery.scrolly.min.js"></script>
+	<script src="%PUBLIC_URL%/browser.min.js"></script>
+	<script src="%PUBLIC_URL%/breakpoints.min.js"></script>
+	<script src="%PUBLIC_URL%/util.js"></script>
+	<script src="%PUBLIC_URL%/parse.js"></script>
+	<script src="%PUBLIC_URL%/main.js"></script>
+  </body>
+</html>

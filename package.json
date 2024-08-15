@@ -1,0 +1,66 @@
+{
+  "proxy": "",
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@react-pdf/renderer": "^3.1.12",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/react-plotly.js": "^2.6.0",
+    "better-react-mathjax": "^2.0.2",
+    "bootstrap": "^5.2.3",
+    "bootstrap-icons": "^1.10.5",
+    "convert-csv-to-array": "^1.0.3",
+    "date-fns": "^2.30.0",
+    "framer-motion": "^10.12.16",
+    "html2pdf.js": "^0.9.3",
+    "http": "^0.0.1-security",
+    "jspdf": "^2.5.1",
+    "math": "^0.0.3",
+    "mathjax": "^3.2.2",
+    "mathjax-node": "^2.1.1",
+    "mathjs": "^11.9.1",
+    "pdf-to-excel": "^0.3.2",
+    "plotly.js": "^2.34.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-html-table-to-excel": "^2.0.0",
+    "react-intersection-observer": "^9.4.4",
+    "react-plotly": "^1.0.0",
+    "react-plotly.js": "^2.6.0",
+    "react-router-dom": "^6.11.2",
+    "react-scripts": "5.0.1",
+    "react-slideshow-image": "^4.2.1",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/bootstrap": "^5.2.6",
+    "@types/mathjax": "^0.0.37"
+  }
+}

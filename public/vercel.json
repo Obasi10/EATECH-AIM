@@ -1,0 +1,15 @@
+{
+    "redirects": [
+        {
+            "source": "/api/:path*",
+            "destination": "https://the-ultimate-calc.onrender.com/:path*"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/[^.]+",
+            "dest": "/",
+            "status": 200
+        }
+    ]
+}

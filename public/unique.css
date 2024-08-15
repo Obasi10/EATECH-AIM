@@ -1,0 +1,234 @@
+
+#intro {
+    color: #ffffff;
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-flex-direction: column;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -moz-justify-content: -moz-flex-end;
+    -webkit-justify-content: -webkit-flex-end;
+    -ms-justify-content: -ms-flex-end;
+    justify-content: flex-end;
+    -moz-transition: opacity 1s ease, -moz-transform 1s ease;
+    -webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
+    -ms-transition: opacity 1s ease, -ms-transform 1s ease;
+    transition: opacity 1s ease, transform 1s ease;
+    position: relative;
+    cursor: default;
+    text-align: center;
+    z-index: 1;
+}
+
+
+#wrapper {
+    -moz-transition: opacity 0.5s ease;
+    -webkit-transition: opacity 0.5s ease;
+    -ms-transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+#wrapper > .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(11, 10, 11);
+  background-size: contain,							auto,														100% auto;
+  background-position: center,								center,														top center;
+  background-repeat: repeat,								no-repeat,													no-repeat;
+  background-attachment: scroll,								scroll,														scroll;
+  z-index: -1;
+}
+        
+                .loading{
+                    font-weight: bolder;
+                    animation: loading 3s infinite ease-in-out;
+                }
+                @keyframes loading {
+                    0%{
+                        font-style: italic;
+                        color:aliceblue;
+                        letter-spacing: 0.01cm;
+                        scale: 1
+                    }
+                    50%{
+                        font-style:normal;
+                        color:hsl(151, 95%, 24%);
+                        letter-spacing: 0.009cm;
+                        scale: 1.2
+                    }
+                    100%{
+                        font-style:oblique;
+                        color:red;
+                        letter-spacing: 0.008cm;
+                        scale: 1.4
+                    }
+                }
+                   
+			#wrapper > .bg.fixed {
+				position: fixed;
+				width: 100vw;
+				height: 100vh;
+			}
+
+            #btn--select{
+                background: hsl(151, 95%, 24%);
+            }
+            .color1{
+                color: #03773f;
+            }
+
+		#wrapper.fade-in:before {
+			pointer-events: none;
+			-moz-transition: opacity 1s ease-in-out;
+			-webkit-transition: opacity 1s ease-in-out;
+			-ms-transition: opacity 1s ease-in-out;
+			transition: opacity 1s ease-in-out;
+			-moz-transition-delay: 0.75s;
+			-webkit-transition-delay: 0.75s;
+			-ms-transition-delay: 0.75s;
+			transition-delay: 0.75s;
+			background: hsl(151, 95%, 24%);
+			content: ' Please wait';
+      color: white;
+			display: block;
+			height: 100%;
+			left: 0;
+			opacity: 0;
+			position: fixed;
+			top: 0;
+			width: 100%;
+		}
+
+		body.is-preload #wrapper.fade-in:before {
+			opacity: 1;
+		}
+
+		@media screen and (orientation: portrait) {
+
+			#wrapper > .bg {
+				background-size: auto,								auto,														auto 100%;
+			}
+
+		}                
+
+                body.is-preload *, body.is-preload *:before, body.is-preload *:after {
+                    -moz-animation: none !important;
+                    -webkit-animation: none !important;
+                    -ms-animation: none !important;
+                    animation: none !important;
+                    -moz-transition: none !important;
+                    -webkit-transition: none !important;
+                    -ms-transition: none !important;
+                    transition: none !important;
+                }
+
+                body.is-preload #intro:not(.hidden) + #header + #nav {
+                    -moz-transform: translateY(4rem);
+                    -webkit-transform: translateY(4rem);
+                    -ms-transform: translateY(4rem);
+                    transform: translateY(4rem);
+                    opacity: 0;
+                }
+
+
+            .stytab::-webkit-scrollbar, #sidebar::-webkit-scrollbar{ 
+                padding: 10%;
+                width: 1%;
+                height: 3px;
+            }
+            .stytab::-webkit-bar-thumb, #sidebar::-webkit-scrollbar-thumb{
+                background: rgba(151, 241, 167, 0.5);
+            }
+            .stytab::-webkit-scrollbar-track, #sidebar::-webkit-scrollbar-track
+            {
+                background: transparent;
+            }
+
+            body::-webkit-scrollbar
+            {
+                width:10px;
+            }
+            body::-webkit-scrollbar-track{
+                box-shadow: inset 0 0 5px grey;
+                border-radius: 10px;
+            }
+            body::-webkit-scrollbar-thumb{
+                background: hsl(151, 95%, 24%);
+                border-radius: 10px;
+            }
+            body{
+                overflow-x: hidden;
+                max-height: 100%;
+            }
+
+
+            #not{
+                margin-top: 200px;
+                margin-bottom: 0;
+                color: rgb(0, 128, 53);
+            }
+            #input2{
+                text-align: center;
+            }
+
+            .note{
+                opacity: 0;
+                animation: motion11 4s 0.1s infinite ease-out;
+                align-self: center;
+                justify-content: center;
+            }
+            
+            @keyframes motion11 {
+              0%{
+                opacity: 1;
+              }
+              9%{
+                opacity: 0.6;
+              }
+              18%{
+                opacity: 1;
+              }
+              27%{
+                opacity: 0.6;
+              }
+              36%{
+                opacity: 1;
+              }
+              45%{
+                opacity: 0.6;
+              }
+              54%{
+                opacity: 1;
+              }
+              63%{
+                opacity: 0.6;
+              }
+              72%{
+                opacity: 1;
+              }
+              81%{
+                opacity: 0.6;
+              }
+              90%{
+                opacity: 1;
+              }
+              99%{
+                opacity: 0.6;
+              }
+            }
+            .styleimg3{
+              border-radius: 50%;
+              max-height: 120px;
+            }
